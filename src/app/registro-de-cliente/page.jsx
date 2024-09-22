@@ -104,24 +104,25 @@ export default function RegistroDeCliente() {
   return (
     <>
       <head>
-        <title>Registro de Cliente - Sistema de Facturación</title>
+        <title>Registrar Cliente - Sistema de Facturación</title>
         <link rel="favicon" href="./icon.png" type="image/png" />
       </head>
       <body className={style.body}>
         <header className={style.cabezera}>
           <section className={style.contenedorTitulo}>
-            <h1 className={style.tituloHeader}>Registro de Cliente</h1>
+            <h1 className={style.tituloHeader}>Registrar Cliente</h1>
           </section>
           <section className={style.contenedorBotonesEnlace}>
             <button className={style.botonUsuario}>
               Usuario: {nombreDeUsuario || nombreDeUsuarioPasado}
             </button>
             <section>
-              <form method="POST" onSubmit={clienteRegistrado}>
-                <button className={style.botonRegcliente}>
-                  ¿Cliente Ya Registrado?
-                </button>
-              </form>
+              <button
+                onClick={clienteRegistrado}
+                className={style.botonRegcliente}
+              >
+                ¿Cliente Ya Registrado?
+              </button>
             </section>
             <section>
               <form method="POST" onSubmit={romperSesion}>
@@ -269,6 +270,7 @@ export default function RegistroDeCliente() {
                       },
                     })}
                     type="number"
+                    min="0"
                     id="Telefono"
                     placeholder="Ejem: 04129999999"
                   />
@@ -289,11 +291,10 @@ export default function RegistroDeCliente() {
         </section>
         <footer className={style.footer}>
           <p className={style.textoFooter}>
-            Sistema de Factuación. Versión 1.2 - Kleiver Chacón y Engerberth
-            Reyes &copy;
+            Sistema de Factuación. Versión 2.0 - Engerberth Reyes &copy;
           </p>
         </footer>
       </body>
     </>
   );
-};
+}
