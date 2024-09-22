@@ -1,0 +1,146 @@
+@font-face {
+  font-family: ProximaNovaFont;
+  src: url(../ProximaNovaFont.otf) format("opentype");
+}
+
+.body {
+  font-family: ProximaNovaFont, sans-serif, arial;
+  background: url(../IMG/Banner/Patron.png) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: grid;
+  overflow: hidden;
+}
+
+.contenedorPrincipal {
+  width: 99%;
+  height: 96vh;
+  display: flex;
+  flex-direction: column;
+  background: url(../IMG/Banner/Rosas.png) no-repeat center center fixed;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  border: 1px solid #ffffff;
+}
+
+.tablaContenedor {
+  margin: 10px 0 10px 0;
+  text-align: center;
+  overflow-x: hidden;
+  height: 37rem;
+}
+
+.table,
+.td,
+.tr,
+.th {
+  border: 2px solid #eeeeee;
+  background: #0f0f0f;
+  border-collapse: collapse;
+  padding: 10px 10px;
+  text-align: center;
+  word-break: break-all;
+  width: 1200px;
+  color: #eeeeee;
+}
+
+.celdaSinbordes {
+  border: none;
+}
+
+.celdaSinbordesTotal {
+  width: 19%;
+  border: none;
+}
+
+.p,
+.h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.contenedorFlex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.titulosContenedor {
+  width: 95%;
+  height: 40px;
+  display: flex;
+  margin-bottom: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.h1,
+.titulo {
+  margin-top: 10px;
+  font-size: 35px;
+}
+
+.tituloH1 {
+  margin-bottom: 16px;
+}
+
+.titulo {
+  font-size: 25px;
+  background: #000000;
+  padding: 10px;
+  border: 2px solid #ffffff;
+}
+
+.tituloFactura {
+  font-size: 25px;
+  background: #000000;
+  padding: 10px;
+  border: 2px solid #ffffff;
+}
+
+.botonFactura {
+  font-weight: bold;
+  color: #000;
+  font-size: 1rem;
+  padding: 1rem 4rem;
+  border: 2px solid #eee;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 1s ease;
+  box-shadow: 0.5rem 0.5rem 1rem #000000, -0.5em -0.5rem 1rem #000;
+}
+
+.botonFactura:hover {
+  box-shadow: 0.5em 0.5rem 1rem #fff, -0.5em -0.5rem 1rem #ccc;
+  background: #000;
+  color: #fff;
+}
+
+.botonFactura:active {
+  transform: scale(0.9);
+  box-shadow: 0.2rem 0.2rem 1rem #fff, inset -0.2rem -0.2rem 1rem #ccc;
+}
+
+@media screen and (max-width: 1260px) {
+  .contenedorPrincipal {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tablaContenedor {
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

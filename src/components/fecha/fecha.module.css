@@ -1,0 +1,12 @@
+@font-face {
+  font-family: PerfectDOSVGA437Win;
+  src: url(./PerfectDOSVGA437Win.ttf) format("truetype");
+}
+
+.tituloPosterior {
+  font-family: PerfectDOSVGA437Win, math;
+}
+
+.fechaParrafo {
+  font-family: ProximaNovaFont, math, sans-serif;
+}

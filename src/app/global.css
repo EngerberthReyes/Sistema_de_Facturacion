@@ -1,0 +1,36 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: ProximaNovaFont;
+  src: url(./ProximaNovaFont.otf) format("opentype");
+}
+
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+::-webkit-scrollbar-track {
+  border: 2px solid #00f;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  border: 2px dashed #ffffff;
+  background: linear-gradient(45deg, #0f1785, #1e4aaa);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  word-break: break-word;
+  font-family: "ProximaNovaFont";
+}
+
+::selection {
+  background-color: #000000;
+  color: #fe1;
+}
