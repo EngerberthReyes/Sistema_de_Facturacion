@@ -8,7 +8,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { fetch } from "@/services/fetch.js";
 
-export default function RegistroDeCliente() {
+const RegistroDeCliente = () => {
   const {
     register,
     handleSubmit,
@@ -297,4 +297,6 @@ export default function RegistroDeCliente() {
       </body>
     </>
   );
-}
+};
+
+export default RegistroDeCliente;
