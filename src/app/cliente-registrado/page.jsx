@@ -164,15 +164,13 @@ export default function ClienteRegistrado() {
   return (
     <>
       <head>
-        <title>Cliente Ya Registrado - Sistema de Facturación</title>
+        <title>Cliente Registrado - Sistema de Facturación</title>
         <link rel="shorcut icon" href="./icon.ico" />
       </head>
       <body className={style.body}>
         <header className={style.cabezera}>
           <section className={style.contenedorTitulo}>
-            <h1 className={style.tituloHeader}>
-              Ingresar Cliente Ya Registrado
-            </h1>
+            <h1 className={style.tituloHeader}>Cliente Registrado</h1>
           </section>
           <section className={style.contenedorBotonesEnlace}>
             <button className={style.botonUsuario}>
@@ -199,9 +197,7 @@ export default function ClienteRegistrado() {
             <form method="POST" onSubmit={onSubmit}>
               <section className={style.contenedorFormulario}>
                 <section className={style.contenedorInputs}>
-                  <h1 className={style.titulo}>
-                    Ingresar Cliente Ya Registrado
-                  </h1>
+                  <h1 className={style.titulo}>Ingresar Cliente Registrado</h1>
                   <label className={style.label} htmlFor="Cedula">
                     Nro de Cédula del Cliente: (8 Caracteres Min - Max)
                   </label>
@@ -238,6 +234,7 @@ export default function ClienteRegistrado() {
                         },
                       })}
                       type="number"
+                      min="0"
                       id="Cedula"
                       placeholder="Ejem: 30434485"
                     />
@@ -275,8 +272,7 @@ export default function ClienteRegistrado() {
         </section>
         <footer className={style.footer}>
           <p className={style.textoFooter}>
-            Sistema de Factuación. Versión 1.2 - Kleiver Chacón y Engerberth
-            Reyes &copy;
+            Sistema de Factuación. Versión 2.0 - Engerberth Reyes &copy;
           </p>
         </footer>
       </body>

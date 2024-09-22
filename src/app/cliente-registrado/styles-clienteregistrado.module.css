@@ -80,7 +80,7 @@
 .contenedorGeneral {
   display: flex;
   position: relative;
-  background: url(../IMG/Banner/Patron.png) no-repeat center center fixed;
+  top: 0rem !important;
   background-size: cover;
   width: 100%;
   height: 84vh;

@@ -1,5 +1,10 @@
 html {
   scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  color-scheme: dark;
 }
 
 @font-face {
@@ -14,6 +19,12 @@ html {
 ::-webkit-scrollbar-track {
   border: 2px solid #00f;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 ::-webkit-scrollbar-thumb {
