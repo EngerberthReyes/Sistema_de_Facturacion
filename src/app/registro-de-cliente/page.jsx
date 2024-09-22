@@ -125,9 +125,9 @@ export default function RegistroDeCliente() {
               </button>
             </section>
             <section>
-              <form method="POST" onSubmit={romperSesion}>
-                <button className={style.botonRegcliente}>Cerrar Sesión</button>
-              </form>
+              <button className={style.botonRegcliente} onClick={romperSesion}>
+                Cerrar Sesión
+              </button>
             </section>
           </section>
         </header>
