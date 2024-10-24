@@ -9,7 +9,7 @@ Descargue o Clone El Proyecto.
 
 Para Ejecutar:
 
-Usar PostgreSQL Como Programa de Gestión de Base de Datos.
+Usar PostgreSQL Como Programa de Gestión de Base de Datos y Con postgres Usuario Creador de La Tabla.
 
 Crear una Base de Datos Llamada: sistemadefacturacionalp_2 en PostgreSQL y Dentro de Ellas, Importar El Siguiente Archivo: sistemadefacturacionalp_2.sql
 
